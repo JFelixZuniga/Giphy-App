@@ -11,7 +11,7 @@ export const AddCategory = ({ setCategories }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (inputValue.trim().length > 2) {
+    if (inputValue.trim().length >= 2) {
       setCategories((cats) => [inputValue, ...cats]);
       setInputValue("");
     }
@@ -19,7 +19,12 @@ export const AddCategory = ({ setCategories }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
+      <input
+        type="text"
+        placeholder="Buscar Gif"
+        value={inputValue}
+        onChange={handleInputChange}
+      />
     </form>
   );
 };

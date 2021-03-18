@@ -1,33 +1,54 @@
 * {
+  box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
+html {
+  background-image: url("img/shattered-island.gif");
+}
 body {
-  padding: 60px;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 95%;
+}
+.title-gif {
+  color: #111;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: -2px -2px 0 #fb01fc, 2px 2px 0 #04fbf6;
 }
 input {
   color: gray;
   font-size: 20px;
   width: 100%;
+  padding: 5px 10px;
+  border: none;
+}
+ol {
+  padding: 0;
+}
+.category {
+  font-size: 20px;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: black;
 }
 .card-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
   align-content: center;
-  border: 1px solid gray;
   border-radius: 6px;
   margin-bottom: 10px;
   margin-left: 10px;
   overflow: hidden;
 }
-
 .card p {
   padding: 5px;
   text-align: center;
 }
-
 .card img {
   max-height: 170px;
 }
